@@ -13,7 +13,6 @@ export class MovieController {
     @ApiBearerAuth()
     @Get('/movie')
     async movies(@Query() params: ListDto, @OAuth2Authorization() auth: string): Promise<[Movie]> {
-        console.log('params', params)
         return this.movieService.getMovies(params, auth);
     }
 
