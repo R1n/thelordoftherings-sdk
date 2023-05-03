@@ -47,7 +47,7 @@ $ npm start
 ## Test
 
 ```bash
-npm test
+npm run test
 ```
 
 ## Swagger
